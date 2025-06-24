@@ -1,0 +1,197 @@
+body {
+  font-family: 'Cairo', Tahoma, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  color: #fff;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  background: rgba(25, 25, 25, 0.82);
+  border-bottom: 4px solid #ffae00;
+  box-shadow: 0 10px 40px 0 #0077ff33;
+  position: relative;
+}
+
+.logo3d {
+  width: 230px;
+  filter: drop-shadow(0 4px 16px #0077ff66);
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.92;
+  margin-bottom: 10px;
+  color: #ffae00;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #ffae00;
+  background: #222b;
+  margin: 0 1rem;
+  padding: 7px 18px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px #0077ff33;
+}
+nav a:hover {
+  background: #0077ff;
+  color: #fff;
+  transform: scale(1.09);
+}
+
+.hero3d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 340px;
+  background: linear-gradient(120deg, #ffae0055, #0077ff30 70%);
+  position: relative;
+}
+.glass-card {
+  background: rgba(255,255,255,0.18);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 #0077ff55;
+  padding: 2.5rem 2rem;
+  max-width: 500px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1.2px solid #fff2;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 24px;
+  background: linear-gradient(90deg, #ffae00 50%, #0077ff 90%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 16px #ffae0080;
+  transition: background 0.2s, transform 0.1s;
+}
+.cta-btn:hover {
+  background: linear-gradient(90deg, #0077ff 30%, #ffae00 100%);
+  transform: scale(1.08);
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem 2vw;
+  background: linear-gradient(90deg, #ffae0011 0%, #0077ff11 100%);
+}
+.service-card {
+  background: rgba(34, 40, 49, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 32px #0077ff40;
+  width: 320px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  border: 1.5px solid #ffae0040;
+  transition: transform 0.18s;
+}
+.service-card:hover {
+  transform: translateY(-8px) scale(1.04) rotate(-1.5deg);
+  box-shadow: 0 8px 32px #ffae00bb, 0 2px 12px #0077ff99;
+}
+.catalog-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 14px #0077ff44;
+  border: 2px solid #ffae0055;
+}
+.service-link {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #0077ff;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 17px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+.service-link:hover {
+  background: #ffae00;
+  color: #222;
+}
+
+.about-sec, .contact-sec {
+  background: rgba(20,30,40,0.93);
+  border-radius: 30px;
+  margin: 2rem auto;
+  padding: 2.2rem 1.5rem;
+  max-width: 700px;
+  box-shadow: 0 4px 16px #ffae0033;
+  text-align: center;
+}
+.contact-links a {
+  color: #0077ff;
+  background: #fff3;
+  margin: 0 0.5rem;
+  border-radius: 12px;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.18s, color 0.16s;
+  display: inline-block;
+}
+.contact-links a:hover {
+  background: #ffae00;
+  color: #fff;
+}
+.contact-links span {
+  display: block;
+  margin: 8px 0;
+  color: #fff;
+  opacity: 0.78;
+}
+
+footer {
+  text-align: center;
+  background: #0a1822;
+  color: #fff;
+  padding: 1.2rem 0 1rem 0;
+  border-top: 3px solid #0077ff;
+  margin-top: 2rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+@media (max-width: 700px){
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.5rem 2vw;
+  }
+  .service-card {
+    width: 96vw;
+    padding: 1.1rem;
+  }
+  .about-sec, .contact-sec {
+    padding: 1.1rem 1vw;
+    border-radius: 16px;
+  }
+}
